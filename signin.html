@@ -4,49 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/signin.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="signin-main-container">
         <div class="signin-div">
-            <h2>Create An Account</h2>
             <form action="form">
+                <h2>Create An Account</h2>
                 <p class="fieldset">
-                    <label for="fname">First Name</label>
-                    <input id="signin-fname" type="name" placeholder="First Name">
-                    <a href="#0" class="fname-logo"><img src="images/#" alt="fname logo"></a>
-                </p>
-                <p class="fieldset">
-                    <label for="lname">Last Name</label>
-                    <input id="signin-lname" type="name" placeholder="Last Name">
-                    <a href="#0" class="lname-logo"><img src="images/#" alt="lname logo"></a>
+                    <label for="uname">Name</label>
+                    <input id="signin-uname" type="name" placeholder="FirstName LastName">
                 </p>
                 <p class="fieldset">
                     <label for="signin-email">E-mail</label>
                     <input id="signin-email" type="email" placeholder="E-mail">
-                    <a href="#0" class="email-logo"><img src="images/#" alt="Email logo"></a>
                 </p>
                 <p class="fieldset">
                     <label for="signin-password1">Password</label>
                     <input id="signin-password1" type="password" placeholder="Enter Password">
-                    <a href="#0" class="hide-password"><img src="images/#" alt="hide password logo"></a>
                 </p>
                 <p class="fieldset">
                     <label for="signin-password2">Confirm Password</label>
                     <input id="signin-password2" type="password" placeholder="Re-enter Password">
-                    <a href="#0" class="hide-password"><img src="images/#" alt="hide password logo"></a>
                 </p>
                 <p class="fieldset">Already have an account? <a href="#0">Log In</a></p>
                 <p class="fieldset">
-                    <input class="#" type="submit" value="Sign Up">
+                    <input class="#" id="signin-submit" type="submit" value="Sign Up">
                 </p>
-                <p class="fieldset"><hr class="short-line"> OR <hr class="short-line"></p>
-                <p class="fieldset">Connect with</p>
-                <p class="fieldset">
-                    <a href="#0" class="sign-in-with-others"><img src="images/#" alt="google logo"></a>
-                    <a href="#0" class="sign-in-with-others"><img src="images/#" alt="apple logo"></a>
-                    <a href="#0" class="sign-in-with-others"><img src="images/#" alt="facebook logo"></a>
+                <p   id="already-have-id" align="right"><span  id="already-have-font">Already have an account? </span><a href="#0" class="login-atag">Log-in</a></p>
+                <div class="content">
+                    <p class="or">OR</p>
+                </div>
+                <p   id="connect-with-font" align="center">Connect with</p>
+                <p   id="bottom-logos" align="center">
+                    <a href="#0" class="log-in-with-others"><img src="images/#"></a>
+                    <a href="#0" class="log-in-with-others"><img src="images/#"></a>
+                    <a href="#0" class="log-in-with-others"><img src="images/#"></a>
                 </p>
             </form>
         </div>
