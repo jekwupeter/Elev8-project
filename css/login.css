@@ -1,7 +1,103 @@
 *, *:after, *:before {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 body{
-    background-color: blue;
+  background-color: powderblue;
+  font-family: 'Roboto', sans-serif;
+}
+/* styling the fonts */
+h4{
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+/* styling the form */
+form {
+  padding: 1.4em;
+  margin:auto;
+  width: 500px;
+  height: 680px;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px rgb(0,0,0,0,3);
+}
+form label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* styling the input include submit button */
+form input {
+  padding: 0;
+  border-radius: 0.3em;
+}
+#login-email-input, #login-password-input, #login-submit{
+  width:100%;
+  border-width: thin;
+  height: 2.4rem;
+  padding: 10px 15px;
+  margin:8px 0;
+  display: block;
+}
+/* adding image to the input boxes */
+#login-email-input{
+  background:url(images/Luffy-Anime-Wallpaper.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 1.8rem;
+}
+#login-password-input{
+  background:url(images/Luffy-Anime-Wallpaper.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 1.8rem;
+}
+/* styling the submit button */
+#login-submit{
+  border:none;
+  color:white;
+  background-color: rgba(50,166,159,255);
+}
+#login-submit:hover{
+  background-color: #29837d;
+}
+/* styling the hr tag */
+.content {
+  margin: 10px auto;
+  width: 200px;
+}
+
+.or {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  background:
+      linear-gradient(#000 0 0) left,
+      linear-gradient(#000 0 0) right;
+  background-size: 40% 1.5px;
+  background-repeat: no-repeat;
+}
+/* styling the color of span */
+.forgot-password, .signin-atag{
+  text-decoration: none;
+  color: rgba(50,166,159,255);
+  font-weight: bold;
+}
+#dont-have-font, #connect-with-font, .remember-me{
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+/* styling the bottom */
+#bottom-logos, .or, #connect-with-font{
+  font-weight: bold;
+  position: relative;
+  bottom: -6.5rem;
+}
+#login-submit, #dont-have-id{
+  position:relative;
+  bottom: -5rem;
+}
+#remember-me-p{
+  position: relative;
+  bottom: -2rem;
 }
