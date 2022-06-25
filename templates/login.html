@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap' %}" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-main-container">
+        <div class="login-div">
+            <form action="form">
+                <h2>Log In</h2>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+                <p  >
+                    <label for="login-email">Email</label>
+                    <input id="login-email-input" type="email" placeholder="E-mail">
+                </p>
+                <p  >
+                    <label for="login-password">Password</label>
+                    <input id="login-password-input" type="password" placeholder="Password">
+                </p>
+                <p  ><a href="{% static '#0' %}" class="forgot-password">Forgot Password?</a></p>
+                <p   id="remember-me-p">
+                    <input id="remember-me" type="checkbox">
+                    <label for="remember-me" class="remember-me">Remember me</label>
+                </p>
+                <p  >
+                    <input id="login-submit" type="submit" value="Log in">
+                </p>
+                <p   id="dont-have-id" align="right"><span  id="dont-have-font">Dont have an account? </span><a href="{% static '#0' %}" class="signin-atag">Sign-in</a></p>
+                <div class="content">
+                    <p class="or">OR</p>
+                </div>
+                <p   id="connect-with-font" align="center">Connect with</p>
+                <p   id="bottom-logos" align="center">
+                    <a href="{% static '#0' %}" class="log-in-with-others"><img src="{% static './images/#' %}"></a>
+                    <a href="#0" class="log-in-with-others"><img src="{% static './images/#' %}"></a>
+                    <a href="#0" class="log-in-with-others"><img src="{% static './images/#' %}"></a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="{% static './index.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <div id="navbar">
+            <div id="leftnav" class="navicon">
+                <div class="leftnav" id="navdiv">
+                    <img id="navdrop" src="{% static './images/navbar.png' %}" alt="navigation dropdown">
+                    <ul class="hide" id="dropdown">
+                        <li>home</li>
+                        <li>login</li>
+                        <li>sign up</li>
+                        <li>lorem 5</li>
+                        <li>lorem 3</li>
+                    </ul>
+                </div>
+                <div class="leftnav">
+                    <img id="search" src="{% static './images/search(1).png' %}" alt="search icon">
+                </div>
+            </div>
+
+            <div class="navicon">
+                <img id="logo" src="{% static './images/logo.png' %}" alt="logo">
+            </div>
+
+            <div id="rightnav" class="navicon">
+                <button id="login"><h4>Login</h4></button>
+                <button id="signup"><h4>Signup</h4></button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div id="backgroundcover">
+
+            <div id="imgdiv">
+                <img src="{% static './images/Background cover.png' %}" alt="team of doctors">
+            </div>
+
+            <div id="fade">
+                <img src="{% static './images/Untitled-1.jpg' %}" alt="black">
+            </div>
+
+            <div id="writeup">
+                <p>
+                    <h2>
+                        We care for you <br>
+                        and your family's <br>
+                        health.
+                    </h2>
+                </p>
+
+                <p>
+                    <h5>
+                        Tech Aid is a Telehealth Virtual Platform Which Provides 24/7 <br>
+                        Medical Solution Right From Your Home.
+                    </h5>
+                </p>
+            </div>
+
+            <div id="howyoufeel">
+                <button>How do you feel?</button>
+            </div>
+
+        </div>
+
+        <div id="techaidwriteup">
+
+            <p>
+                <h2>Tech Aid</h2>
+            </p>
+
+            <p>
+                Tech aid gives you and your family free virtual access to medical services without the hassle of going to the hospital for cards and cues. With tech aid, you can consult <br>
+                a doctor of your choice, talk to a doctor, get health insights, locate the hospitals closest to you, call for emergency and book a health coverage with just your phone, <br>
+                computer or tablet.
+            </p>
+
+        </div>
+
+        <div id="benefits">
+
+            <div id="benefitsheader">
+                <h2>Our Remote Benefits</h2>
+            </div>
+
+            <div id="fourdivs">
+
+                <div class="flex1">
+                    <img class="flex1img" src="{% static './images/pHONE.png' %}" alt="phone">
+                    <div class="flex1writeup">
+                        <p>
+                            <h3>Remote Access</h3>
+                        </p>
+                        <p>
+                            Download the app and get <br>
+                            access to all our services <br>
+                            from anywhere in the country.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex1">
+                    <img class="flex1img" src="{% static './images/clock.png' %}" alt="clock">
+                    <div class="flex1writeup">
+                        <p>
+                            <h3>Remote Access</h3>
+                        </p>
+                        <p>
+                            Download the app and get <br>
+                            access to all our services <br>
+                            from anywhere in the country.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex1">
+                    <img class="flex1img" src="{% static './images/Map.png' %}" alt="Map">
+                    <div class="flex1writeup">
+                        <p>
+                            <h3>Remote Access</h3>
+                        </p>
+                        <p>
+                            Download the app and get <br>
+                            access to all our services <br>
+                            from anywhere in the country.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex1">
+                    <img class="flex1img" src="{% static './images/calendar.png' %}" alt="calendar">
+                    <div class="flex1writeup">
+                        <p>
+                            <h3>Remote Access</h3>
+                        </p>
+                        <p>
+                            Download the app and get <br>
+                            access to all our services <br>
+                            from anywhere in the country.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demacate">
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div id="consultants">
+            <div id="consultantintro">
+                <h3>CONSULTANTS AVAILABLE AT REQUEST</h3>
+            </div>
+
+            <div id="fourconsultants">
+                <div class="consultantflex">
+                    <img src="{% static './images/doctor1.png' %}" alt="doctor1">
+                </div>
+                <div class="consultantflex">
+                    <img src="{% static './images/doctor2.png' %}" alt="doctor1">
+                </div>
+                <div class="consultantflex">
+                    <img src="{% static './images/doctor 3.png' %}" alt="doctor1">
+                </div>
+                <div class="consultantflex">
+                    <img src="{% static './images/Rectangle 28.png' %}" alt="doctor1">
+                </div>
+            </div>
+        </div>
+
+        <div id="consultantcomment">
+            <p>
+                All consultants for any health related issue on the site are available at reques.
+                Call or chat with your doctor.
+            </p>
+        </div>
+
+        <div class="demacate">
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div id="therapy">
+            <div id="therapycontent">
+                <div class="therapycontent">
+                    <h3>Therapy</h3>
+                    <img src="{% static './images/vidoe call.png' %}" alt="video Call">
+                    <p class="therapywriteup">
+                        Conduct your therapy session with your therapist from the
+                        comfort of your home, office or anywhere around the world.
+                    </p>
+                </div>
+                <div class="therapycontent">
+                    <h3>Antenatal</h3>
+                    <img src="{% static './images/antenan.png' %}" alt="antenatal">
+                    <p class="therapywriteup">
+                        Recieve antenatal care from the comfort of your home by
+                        either chatting or calling your doctor.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demacate">
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div id="contactsection">
+            <div id="contactsection1">
+                <h3>Want to get in touch with us?</h3>
+            </div>
+
+            <p>
+                Get in touch with our health support team by <br>
+                clicking on contact us.
+            </p>
+            <div id="contactus">
+                <button><h4>Contact us</h4></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footcontainer">
+            <div class="footflex">
+                <img id="footlogo" src="{% static './images/logo.png' %}" alt="logo">
+                <p>
+                    Tech aid is your number one Telehealth
+                    provider that provides you with Virtual
+                    health care
+                </p>
+                <img class="stores" src="{% static './images/google.png' %}" alt="play store">
+                <img class="stores" src="{% static './images/apple.png' %}" alt="apple">
+            </div>
+            <div class="footflex">
+                <ul>
+                    <li><h4>How it Works</h4></li>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Emergency</li>
+                    <li>Contact Us</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+            <div class="footflex">
+                <ul>
+                    <li><h4>What We Do</h4></li>
+                    <li>Therapy</li>
+                    <li>Consultation</li>
+                    <li>Gyno</li>
+                    <li>Prescription</li>
+                    <li>Health Support</li>
+                </ul>
+            </div>
+            <div class="footflex">
+                <ul>
+                    <li><h4>Support Links</h4></li>
+                    <li>Privacy Policy</li>
+                    <li>Terms and Conditions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>Copyright 2022 Techaid. All rights reserved.</p>
+        </div>
+
+        <div id="end">
+            <br>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="{% static './index.js' %}"></script>
+</body>
+
+</html>
