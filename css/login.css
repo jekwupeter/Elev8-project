@@ -16,7 +16,7 @@ form {
   padding: 1.4em;
   margin:auto;
   width: 500px;
-  height: 680px;
+  height: 650px;
   border-radius: 8px;
   font-size: 1rem;
   background-color: rgb(255, 255, 255);
@@ -37,17 +37,17 @@ form input {
   height: 2.4rem;
   padding: 10px 15px;
   margin:8px 0;
-  display: block;
+  display: inline-block;
 }
 /* adding image to the input boxes */
 #login-email-input{
-  background:url(images/Luffy-Anime-Wallpaper.jpg);
+  background:url(../images/email-logo.PNG);
   background-position: right;
   background-repeat: no-repeat;
   background-size: 1.8rem;
 }
 #login-password-input{
-  background:url(images/Luffy-Anime-Wallpaper.jpg);
+  background:url(../images/hide-pwd-logo.PNG);
   background-position: right;
   background-repeat: no-repeat;
   background-size: 1.8rem;
@@ -91,13 +91,27 @@ form input {
 #bottom-logos, .or, #connect-with-font{
   font-weight: bold;
   position: relative;
-  bottom: -6.5rem;
+  bottom: -4rem;
+  text-align: center;
 }
 #login-submit, #dont-have-id{
   position:relative;
-  bottom: -5rem;
+  bottom: -3rem;
 }
 #remember-me-p{
   position: relative;
   bottom: -2rem;
+}
+#dont-have-id{
+  text-align: right;
+}
+#footer-img1, #footer-img2, #footer-img3{
+  border-radius: 50%;
+  width: 1.3rem;
+}
+#bottom-logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.8rem;
 }
