@@ -12,3 +12,7 @@ def signin(request):
 def login(request):
     '''Renders the loginpage'''
     return render (request,"login.html")
+
+def hospital(request):
+    '''Renders the hospitalpage'''
+    return render (request,"hospitals.html")
