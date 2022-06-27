@@ -1,3 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAid</title>
+    <link href="{% static '/images/logo.png' %}" rel="icon">
+    <link rel="stylesheet" href="{% static './index.css' %}">   
+</head>
+
+<body>
+
+    <header>
+        <div id="navbar">
+            <div id="leftnav" class="navicon">
+                <div class="leftnav" id="navdiv">
+                    <img id="navdrop" src="{% static './images/navbar.png' %}" alt="navigation dropdown">
+                    <ul class="hide" id="dropdown">
+                        <li>home</li>
+                        <li>login</li>
+                        <li>sign up</li>
+                        <li>hospitals</li>                       
+                    </ul>
+                </div>
+                <div class="leftnav">
+                    <form class=" d-flex" method="POST"
+                    action = "{% url 'base' %}"
+                    >
+
+                        {% csrf_token %}
+                            
+                        <input type="text" placeholder="Search.." name = "searched">
+                        <button type="submit">Search</button>                        
+                    </form>
+                </div>
+            </div>
+
+            <div class="navicon">
+                <img id="logo" src="{% static './images/logo.png' %}" alt="logo">
+            </div>
+
+            <div id="rightnav" class="navicon">
+                <button id="login"><h4>Login</h4></button>
+                <button id="signup"><h4>Signup</h4></button>
+            </div>
+        </div>
+    </header>
 
 
 {% block content %} 
@@ -6,8 +55,7 @@
         <h1> You searched for {{searched}}</h1>
         <br/>
         {% for hospital in hospitals %}
-            {{hospital}}
-
+            <a href="{% url 'hospital' %}"> {{hospital}} - {{hospital.address}}</a> <br/>
         {% endfor %}
 
     {%else %}
@@ -16,3 +64,4 @@
     </center>
 
 {% endblock %}
+

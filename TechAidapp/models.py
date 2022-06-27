@@ -13,4 +13,4 @@ class Hospital (models.Model):
     # image_three = models.ImageField(upload_to='images/')
 
     def __str__(self):
-        return f'{self.id} {self.name} {self.city}'
+        return f'{self.id} {self.name}'
