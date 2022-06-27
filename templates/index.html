@@ -17,10 +17,10 @@
                 <div class="leftnav" id="navdiv">
                     <img id="navdrop" src="{% static './images/navbar.png' %}" alt="navigation dropdown">
                     <ul class="hide" id="dropdown">
-                        <li>home</li>
-                        <li>login</li>
-                        <li>sign up</li>
-                        <li>hospitals</li>                       
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">login</a></li>
+                        <li><a href="#">sign up</a></li>
+                        <li><a href="#">hospitals</a></li>                       
                     </ul>
                 </div>
                 <div class="leftnav">
@@ -29,12 +29,12 @@
             </div>
 
             <div class="navicon">
-                <img id="logo" src="{% static './images/logo.png' %}" alt="logo">
+                <a href="#"><img id="logo" src="{% static './images/logo.png' %}" alt="logo"></a>
             </div>
 
             <div id="rightnav" class="navicon">
-                <button id="login"><h4>Login</h4></button>
-                <button id="signup"><h4>Signup</h4></button>
+                <button id="login"><h4><a href="{% url 'login' %}">Login</a></h4></button>
+                <button id="signup"><h4><a href="{% url 'signin' %}">Signup</a></h4></button>
             </div>
         </div>
     </header>
