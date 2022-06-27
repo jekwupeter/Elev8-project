@@ -2,17 +2,17 @@
     box-sizing: border-box;
   }
   
-  body{
+body{
     background-color: powderblue;
     font-family: 'Roboto', sans-serif;
   }
   /* styling the fonts */
-  h4{
+h4{
     font-weight: lighter;
     font-size: 0.8rem;
   }
   /* styling the form */
-  form {
+form {
     padding: 1.4em;
     margin:auto;
     width: 500px;
@@ -22,16 +22,16 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 10px rgb(0,0,0,0,3);
   }
-  form label {
+form label {
     font-size: 1rem;
     font-weight: bold;
   }
   /* styling the input include submit button */
-  form input {
+form input {
     padding: 0;
     border-radius: 0.3em;
   }
-  #signin-uname, #signin-email, #signin-password1, #signin-password2, #signin-submit{
+#signin-uname, #signin-email, #signin-password1, #signin-password2, #signin-submit{
     width:100%;
     border-width: thin;
     height: 2.4rem;
@@ -44,10 +44,21 @@
     font-weight: bold;
     position: relative;
     bottom: -2.5rem;
+    text-align: center;
   }
-  #signin-submit, #already-have-id{
+#signin-submit, #already-have-id{
     position:relative;
     bottom: -1rem;
+  }
+#footer-img1, #footer-img2, #footer-img3{
+    border-radius: 50%;
+    width: 1.3rem;
+  }
+#bottom-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.8rem;
   }
 /* styling the color of span */
 .signin-atag{
@@ -59,13 +70,16 @@
     font-size: 0.8rem;
     font-weight: lighter;
   }
+  #already-have-id{
+    text-align: right;
+  }
   /* styling the hr tag */
 .content {
     margin: 10px auto;
     width: 200px;
   }
   
-  .or {
+.or {
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
@@ -81,30 +95,30 @@
     color:white;
     background-color: rgba(50,166,159,255);
   }
-  #signin-submit:hover{
+#signin-submit:hover{
     background-color: #29837d;
   }
   /* adding image to the input boxes */
 #signin-uname{
-    background:url(images/Luffy-Anime-Wallpaper.jpg);
+    background:url(../images/user-name-logo.PNG);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 1.8rem;
   }
-  #signin-email{
-    background:url(images/Luffy-Anime-Wallpaper.jpg);
+#signin-email{
+    background:url(../images/email-logo.PNG);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 1.8rem;
   }
-  #signin-password1{
-    background:url(images/Luffy-Anime-Wallpaper.jpg);
+#signin-password1{
+    background:url(../images/hide-pwd-logo.PNG);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 1.8rem;
   }
-  #signin-password1{
-    background:url(images/Luffy-Anime-Wallpaper.jpg);
+#signin-password2{
+    background:url(../images/hide-pwd-logo.PNG);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 1.8rem;

@@ -1,0 +1,389 @@
+:root{
+    --navColor: #32a69f;
+    --background: white;
+    --link: #94D1CD;
+}
+
+body{
+    background-color: var(--background);
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    border: solid silver;
+}
+
+
+
+/*******************************header section******************************************/
+
+#navbar {
+    background-color:var(--navColor);
+    height: 4rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.navicon {
+    display:inline-flex;
+    width:32%;
+    align-items:center;
+    justify-content: center;
+}
+
+#navdiv {
+    flex-direction: column;
+}
+
+#navdiv ul {
+    list-style-type: none;
+    position: absolute;
+    top: 3rem;
+    left: 5.5%;
+    z-index: 5;
+    width:15%;
+    background-color:white;
+    text-align: center;
+    padding: 0%;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+
+#navdiv ul li {
+    font-size: 1.2rem;
+    color:white;
+    background-color: var(--navColor);
+    width:100%;
+    margin-bottom: 0.2rem;
+    margin-left: 0%;
+    padding: 0.3rem 0rem;
+    border-radius:5%;
+    -webkit-border-radius:5%;
+    -moz-border-radius:5%;
+    -ms-border-radius:5%;
+    -o-border-radius:5%;
+}
+
+#logo {
+    width:30%;
+}
+
+#leftnav {
+    justify-content: flex-start;
+}
+
+.leftnav {
+    width: 7%;
+    margin-left: 18%;
+}
+
+.leftnav img {
+    width:100%;
+}
+
+#search {
+    margin-left: 20%;
+}
+
+#rightnav {
+    justify-content: flex-end;
+}
+
+#rightnav button {
+    width: 25%;
+    margin-right: 10%;
+    color:white;
+    background: none;
+    border: solid 1px white;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+}
+
+#rightnav button h4 {
+    margin: 6% 0%;
+}
+
+/******************************************************************************************/
+
+
+/*****************************************main section*************************************/
+
+#backgroundcover {
+    width: 100%;
+    position:relative;
+}
+
+#imgdiv {
+    width: 100%;
+}
+
+#imgdiv img {
+    width: 100%;
+}
+
+#fade {
+    position: absolute;
+    top: 0%;
+    background-color:black;
+    width: 100%;
+    opacity: 70%;
+}
+
+#fade img {
+    width: 100%;
+}
+
+#writeup {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    color: white;
+    font-size: larger;
+    line-height: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#writeup h5 {
+    line-height: 2rem;
+}
+
+#howyoufeel {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    width:20%;
+    box-shadow: burlywood 0.1rem 0.1rem;
+}
+
+#howyoufeel button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: var(--navColor);
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+
+#techaidwriteup {
+    text-align: center;
+    padding-bottom: 1.5%;
+}
+
+#techaidwriteup h2 {
+    text-align:center;
+    color: var(--navColor);
+}
+
+#benefits {
+    background-color: var(--navColor);
+    color: white;
+    padding-top: 2rem;
+}
+
+#benefitsheader {
+    text-align: center;
+    margin-bottom:3rem;
+}
+
+#fourdivs {
+    width: 100%;
+    padding: 0% 0% 2% 0%;
+}
+
+.flex1 {
+    display: inline-flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 4%;
+}
+
+.flex1img {
+    display: block;
+    width: 45%;
+    margin: auto;
+}
+
+.flex1writeup {
+    text-align: center;
+}
+
+.demacate {
+    background-color: var(--link);
+}
+
+#consultants {
+    background-color:var(--navColor);
+}
+
+#consultantintro {
+    text-align: center;
+    color: var(--navColor);
+    background-color: white;
+    padding-bottom: 0.1rem;
+}
+
+#fourconsultants {
+    width:100%;
+    margin:auto;
+}
+
+.consultantflex {
+    display: inline-flex;
+    width: 20%;
+    margin-left: 4%;
+    padding: 5% 0%;
+}
+
+.consultantflex img {
+    width:100%;
+}
+
+#consultantcomment {
+    text-align: center;
+}
+
+#therapy {
+    width:100%;
+}
+
+#therapycontent {
+    width:100%;
+    margin:auto;
+}
+
+.therapycontent {
+    text-align: center;
+    color: var(--navColor);
+    display:inline-flex;
+    width: 44%;
+    flex-direction: column;
+    margin-left: 4%;
+}
+
+.therapycontent img {
+    display:block;
+    width:100%;
+}
+
+.therapywriteup {
+    color:black;
+}
+
+#contactsection1 {
+    width: 30%;
+    margin: auto;
+    margin-top: 3%;
+    box-shadow: 0.2rem 0.2rem grey;
+    text-align: center;
+    border: 1px silver solid;
+    border-radius:3%;
+    -webkit-border-radius:3%;
+    -moz-border-radius:3%;
+    -ms-border-radius:3%;
+    -o-border-radius:3%;
+}
+
+#contactsection p {
+    text-align: center;
+}
+
+#contactus {
+    margin:auto;
+    width: 10%;
+    align-content: center;
+}
+
+#contactus button {
+    width: 100%;
+    height:80%;
+    background-color: var(--navColor);
+    color:white;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+/***********************************************************************************************/
+
+
+/**********************************footer section***********************************************/
+
+#footcontainer {
+    background-color:var(--navColor);
+    color:white;
+    margin-top: 4%;
+    padding: 2%;
+}
+
+#footcontainer:first-child * {
+    margin-bottom: 1.5rem;
+}
+
+.footflex {
+    display:inline-flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footflex ul {
+    list-style-type: none;
+    display: block;
+    margin: auto;
+}
+
+.footflex li {
+    margin-bottom: 1.5rem;
+}
+
+.footflex p {
+    text-align: center;
+    margin-top: 0%;
+}
+
+
+#footlogo {
+    width: 50%;
+    display:block;
+    margin: auto;
+}
+
+.stores {
+    width:50%;
+    display:block;
+    margin:auto;
+}
+
+#copyright {
+    text-align: center;
+}
+
+#end {
+    background-color:var(--navColor);
+}
+
+/********************************************************************************/
+
+
+/*******************************assisting classes********************************/
+
+.hide {
+    visibility:hidden;
+}
+
+/********************************************************************************/
