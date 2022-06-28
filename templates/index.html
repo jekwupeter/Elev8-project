@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
-    <link rel="stylesheet" href="{% static './index.css' %}">
+    <title>TechAid</title>
+    <link href="{% static '/images/logo.png' %}" rel="icon">
+    <link rel="stylesheet" href="{% static './index.css' %}">   
 </head>
 
 <body>
@@ -24,7 +25,15 @@
                     </ul>
                 </div>
                 <div class="leftnav">
-                    <img id="search" src="{% static './images/search(1).png' %}" alt="search icon">
+                    <form class=" d-flex" method="POST"
+                    action = "{% url 'base' %}"
+                    >
+
+                        {% csrf_token %}
+                            
+                        <input type="text" placeholder="Search.." name = "searched">
+                        <button type="submit">Search</button>                        
+                    </form>
                 </div>
             </div>
 
@@ -70,11 +79,9 @@
             </div>
 
             <div id="howyoufeel">
-                <button><a class="aclass"  href="#">How do you feel?</button>                
+                <button><a class="aclass"  href="{% url 'healthEnquiry' %}">How do you feel?</button>                
             </div>
-            <div>               
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            </div>
+    
 
         </div>
 

@@ -1,0 +1,330 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAid</title>
+    <link href="{% static '/images/logo.png' %}" rel="icon">
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/how-do-you-feel.css' %}">   
+</head>
+
+<body>
+    <main>
+        <div id="main-picture">
+            <img src="{% static '/images/lady-staring.png' %}" alt="woman looking at doctor">
+        </div>
+        <div id="mid-div">
+            <p id="p1">How do you feel?</p>
+            <p id="p2">Tell us what you feel so we know the best cause of of action to solve your problem</p>
+            <p id="p3">Find a condition by letter</p>
+        </div>
+        <div id="letters">
+            <ul>
+            <li><a class="condition-letters" href="#"><span class="letter">A</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>A</h1></li>
+                    <li><a href="#">Acid Reflux</a></li>
+                    <li><a href="#">Acne</a></li>
+                    <li><a href="#">ALS</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">B</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>B</h1></li>
+                    <li><a href="#">Back Pain</a></li>
+                    <li><a href="#">Bipolor Disorder</a></li>
+                    <li><a href="#">Bursitis</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">C</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>C</h1></li>
+                    <li><a href="#">Carpal Tunnel</a></li>
+                    <li><a href="#">Celiac Disease</a></li>
+                    <li><a href="#">Cellutis</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">D</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>D</h1></li>
+                    <li><a href="#">Depression</a></li>
+                    <li><a href="#">Dermatitis</a></li>
+                    <li><a href="#">Diabetes</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">E</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>E</h1></li>
+                    <li><a href="#">Ear pain</a></li>
+                    <li><a href="#">Eczema</a></li>
+                    <li><a href="#">Emphysema</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">F</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>F</h1></li>
+                    <li><a href="#">Flu</a></li>
+                    <li><a href="#">Fivromyaligia</a></li>
+                    <li><a href="#">Foot pain</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">G</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>G</h1></li>
+                    <li><a href="#">Genital Herpes</a></li>
+                    <li><a href="#">Gout</a></li>
+                    <li><a href="#">Golfers Elbow</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">H</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>H</h1></li>
+                    <li><a href="#">Headache</a></li>
+                    <li><a href="#">hearth Health</a></li>
+                    <li><a href="#">HPV</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">I</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>I</h1></li>
+                    <li><a href="#">Incontinence</a></li>
+                    <li><a href="#">Insonmia</a></li>
+                    <li><a href="#">irritable bowel</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">J</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>J</h1></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">K</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>K</h1></li>
+                    <li><a href="#">Knee pain</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">L</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>L</h1></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">M</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>M</h1></li>
+                    <li><a href="#">Malaria</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">N</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>N</h1></li>
+                    <li><a href="#">Narcolepsy</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">O</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>O</h1></li>
+                    <li><a href="#">OCD</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">P</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>P</h1></li>
+                    <li><a href="#">Pink eye</a></li>
+                    <li><a href="#">Phobias</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">Q</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>Q</h1></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">R</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>R</h1></li>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">S</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>S</h1></li>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">T</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>U</h1></li>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">V</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>V</h1></li>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">W</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>W</h1></li>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">X</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>X</h1></li>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">Y</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>Y</h1></li>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a class="condition-letters" href="#"><span class="letter">Z</span></a>
+                <ul class="dropdown-content">
+                    <br><br><br>
+                    <li><h1>Z</h1></li>
+                    <li><a href="#">Zika</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="demacate">
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div id="contactsection">
+            <div id="contactsection1">
+                <h3>Can't find your problem?</h3>
+            </div>
+
+            <p>
+                Would you like to talk to a doctor if your illness is not on the list?
+            </p>
+            <div id="contactus">
+                <button><h4><a class="aclass" href="#">Talk to a Doctor</a></h4></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footcontainer">
+            <div class="footflex">
+                <img id="footlogo" src="{% static './images/logo.png' %}" alt="logo">
+                <p>
+                    Tech aid is your number one Telehealth
+                    provider that provides you with Virtual
+                    health care
+                </p>
+                <a class="aclass" href="#"><img class="stores" src="{% static './images/google.png' %}" alt="play store"></a>
+                <a class="aclass" href="#"><img class="stores" src="{% static './images/apple.png' %}" alt="apple"></a>
+            </div>
+            <div class="footflex">
+                <ul>
+                    <li><h4>How it Works</h4></li>
+                    <li><a class="aclass" href="{% url 'home' %}">Home</a></li>
+                    <li><a class="aclass" href="#">About Us</a></li>
+                    <li><a class="aclass" href="#">Services</a></li>
+                    <li><a class="aclass" href="#">Emergency</a></li>
+                    <li><a class="aclass" href="#">Contact Us</a></li>
+                    <li><a class="aclass" href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footflex">
+                <ul>
+                    <li><h4>What We Do</h4></li>
+                    <li>Therapy</li>
+                    <li>Consultation</li>
+                    <li>Gyno</li>
+                    <li>Prescription</li>
+                    <li>Health Support</li>
+                </ul>
+            </div>
+            <div class="footflex">
+                <ul>
+                    <li><h4><a class="aclass" href="#">Support Links</a></h4></li>
+                    <li><a class="aclass" href="#">Privacy Policy</a></li>
+                    <li><a class="aclass" href="#">Terms and Condition</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>Copyright 2022 Techaid. All rights reserved.</p>
+        </div>
+
+        <div id="end">
+            <br>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/how-do-you-feel.js"></script>
+</body>
+
+</html>

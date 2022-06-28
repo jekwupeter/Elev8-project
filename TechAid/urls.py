@@ -22,4 +22,5 @@ urlpatterns = [
     path('login', include('TechAidapp.urls')),
     path('signin', include('TechAidapp.urls')),
     path('hospitals', include('TechAidapp.urls')),
+    path('healthEnquiry', include('TechAidapp.urls')),
 ]

@@ -1,0 +1,252 @@
+:root{
+    --navColor: #32a69f;
+    --background: white;
+    --link: #94D1CD;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--background);
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    border: solid silver;
+}
+/****************************************************main section*****************************************/
+main {
+    display: flex;
+    gap:1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#backgroundcover {
+    width: 100%;
+    position:relative;
+}
+/* styling the main image */
+#main-picture{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    margin: 10px 5px
+}
+#main-picture img{
+    width:100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+/* styling the mid ptag */
+#p1{
+    color: #32A69F;
+    text-align: center;
+    margin-bottom: 2.2rem;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.88rem;
+    line-height: 2.5rem;
+}
+#p2{
+    margin-bottom: 2.2rem;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #000000;
+
+}
+#p3{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.88rem;
+    text-align: center;
+    color: #000000;
+}
+/* styling the list of letter for conditions */
+#letters{  
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:auto;
+}
+.condition-letters{
+    text-decoration: none;
+    color:white;
+}
+.condition-letters:visited span{
+    background: #94D1CD;
+}
+.letter{
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    font-weight: 600;
+    font-size: 1.87rem;
+    padding: 0.1rem 0.1rem;
+    background: #32A69F;
+    width: 1.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+/* styling lettter dropdown */
+#letters ul li{
+    list-style: none;
+    position: relative;
+    transition: 0.5s;
+}
+#letters ul{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:auto;
+    gap: 0.5rem;
+}
+#letters ul li ul
+{
+  display: none;
+}
+#letters ul li:hover{
+    width: 20rem;
+}
+#letters ul li:hover ul
+{
+  display: block;
+  height: 20rem;
+  position: absolute;
+  margin-top: 0.35rem;
+  width: 100%;
+  /* background-color: #8fc7c3;; */
+  /* box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5); */
+}
+#letters ul li:hover ul li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 1.26;
+    color: #000000;
+}
+/*****************************Before the footer section*****/
+.demacate {
+    background-color: var(--link);
+}
+
+#contactsection1 {
+    width: 30%;
+    margin: auto;
+    margin-top: 3%;
+    box-shadow: 0.2rem 0.2rem grey;
+    text-align: center;
+    border: 1px silver solid;
+    border-radius:3%;
+    -webkit-border-radius:3%;
+    -moz-border-radius:3%;
+    -ms-border-radius:3%;
+    -o-border-radius:3%;
+}
+
+#contactsection p {
+    text-align: center;
+}
+
+#contactus {
+    margin:auto;
+    width: 10%;
+    align-content: center;
+}
+
+#contactus button {
+    width: 100%;
+    height:80%;
+    background-color: var(--navColor);
+    color:white;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+/**********************************footer section***********************************************/
+
+footer a {
+    color: white;
+}
+#footcontainer {
+    background-color:var(--navColor);
+    color:white;
+    margin-top: 4%;
+    padding: 2%;
+}
+
+#footcontainer:first-child * {
+    margin-bottom: 1.5rem;
+}
+
+.footflex {
+    display:inline-flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footflex ul {
+    list-style-type: none;
+    display: block;
+    margin: auto;
+}
+
+.footflex li {
+    margin-bottom: 1.5rem;
+}
+
+.footflex p {
+    text-align: center;
+    margin-top: 0%;
+}
+
+
+#footlogo {
+    width: 50%;
+    display:block;
+    margin: auto;
+}
+
+.stores {
+    width:50%;
+    display:block;
+    margin:auto;
+}
+
+#copyright {
+    text-align: center;
+}
+
+#end {
+    background-color:var(--navColor);
+}
+
+/********************************************************************************/
+
+
+/*******************************assisting classes********************************/
+
+.hide {
+    visibility:hidden;
+}
+
+/********************************************************************************/
+
+/* styling a tags */
+.aclass{
+    text-decoration: none;
+}
