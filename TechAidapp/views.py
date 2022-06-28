@@ -10,13 +10,17 @@ def home(request):
 def base(request):
     if request.method == "POST":
         searched = request.POST['searched']
-        hospitals = Hospital.objects.filter(name__contains = searched)
+        hospitals = Hospital.objects.filter(
+        city__contains=searched)
 
-    #     '''Renders the basepage'''
-    #     return render (request,"base.html", 
-    #     {'searched': searched, 'hospitals': hospitals})
-    # else:
-    return render (request,"hospitals.html",{"searched": searched})
+        '''Renders the basepage'''
+        return render (request,"base.html", 
+        {'searched': searched, 'hospitals': hospitals})
+    else:
+        return render (request,"base.html",{"searched": searched})
+    # if request.method == "POST":
+    #     searched = request.POST['searched']
+    # return render (request,"hospitals.html",{"searched": searched})
 
 def signin(request):
     '''Renders the signinpage'''
